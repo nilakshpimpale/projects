@@ -1,0 +1,48 @@
+
+<html>
+  <head>
+    <title>Movies App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+  </head>
+  <body>
+    <header>
+    {% include 'header.html'%}
+    </header>
+    <div class="container" style="padding-top:10%">
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label class="form-label">Search for Home:</label>
+          <input type="text" name="searchhome" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Search
+        </button>
+      </form>
+      <p>Searching for: {{ searchTerm }}</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4" >
+        
+        {% for i in data %}
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="{{ i.home_img.url }}" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">TYPE:- {{ i.home_type }}</h5></a>  
+              <h5 class="card-title fw-bold">PRICE:- {{ i.home_price }}</h5></a>  
+              <a href="{% url 'availd' i.id %}" class="btn btn-primary">
+                EXPLORE
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>    
+      <br/>
+      <br/>
+     </div>
+    </body>
+    </html>
+    

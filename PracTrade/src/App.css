@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+  ;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#tradingview_ff1c9
+{
+    height:500px;
+    width:1000px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+}
+input[type="text"] {
+  padding: 5px;
+  width: 1000px;
+  margin-right: 10px;
+  background-color: aquamarine;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the search results */
+h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #101034;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Links styles */
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed */
+  text-align: center;
+}
+
+/* Round the edges of the image */
+
+
+/* Style for text */
+h1, h2 {
+  color: #333; /* Text color */
+  margin: 10px 0; /* Add space around text */
+}
+
+#long {
+  background-color: #072e20;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Text color for contrast */
+  font-family: Arial, sans-serif;
+  font-size: x-large;
+  flex-direction: column;
+  padding-bottom: 20px;
+  
+}
+/* CSS for the "center" class */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* Adjust as needed for the desired height */
+  background-color: #d6d6f0; /* Background color for the container */
+}
+
+.center h1 {
+  display: inline-block; /* Make the background width equal to the text length */
+  padding: 10px; /* Add padding for spacing around the text */
+  background-color: #007bff; /* Background color for the title */
+  color: #fff; /* Text color for contrast */
+  font-family: Arial, sans-serif;
+  font-size: x-large;
+  color: #000000; /* Dark text color for the title */
+}
+
+.center img {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make the image round */
+  margin: 20px 0; /* Add space around the image */
+  object-fit: cover; /* Maintain aspect ratio for the image */
+}
+
+.center h2 {
+  color: #333; /* Dark text color for other text */
+  margin: 10px 0; /* Add space around other text */
+}
+
+html, body, #root {
+  background-color: #6f8695; /* Light gray background color */
+  /* Add other global styles as needed */
+}

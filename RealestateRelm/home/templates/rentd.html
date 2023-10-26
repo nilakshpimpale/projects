@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Movies App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+  </head>
+  <body>
+    <header>
+      {% include 'header.html'%}
+      </header>
+
+       
+    <div class="container" style="padding-top:6%">
+      <h1 style="text-align:center;"><b>PROPERTY DETAILS</b></h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      
+          <img
+          src="{{ movie.img_2.url }}"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Yosemite National Park"
+          />
+
+          <img
+          src="{{ movie.img_5.url }}"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+          />
+        </div>
+      
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+          src="{{ movie.img_4.url }}"  
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Mountains in the Clouds"
+          />
+      
+          <img
+          src="{{ movie.img_3.url }}"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+          />
+        </div>
+      
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+          src="{{ movie.home_img.url }}" 
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Waves at Sea"
+          />
+      
+        </div>
+      </div>
+     <b>HOME TYPE:</b> <h5 class="card-title fw-bold ">{{ movie.home_type }}</h5>
+     <br/>
+     <b><I>PROPERTY PRICE</I></b><h5 class="card-title fw-bold">{{ movie.home_price }}</h5>   
+     <br/>
+     <b><I>PROPERTY DETAILS</I></b><h5 class="card-title fw-bold">{{ movie.home_desc }}</h5> 
+     <br/>
+     <b><I>LOCATION</I></b><h5 class="card-title fw-bold">{{ movie.location }}</h5>   
+     <br/>
+     <b><I>ADDRESS:- </I></b><h5 class="card-title fw-bold">{{ movie.home_address }}</h5>  
+      <br />
+      <br />
+     </div>
+    </body>
+    </html>

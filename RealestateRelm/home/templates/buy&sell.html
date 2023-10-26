@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    </head>
+    <body>
+        <header>
+            {% include 'header.html' %}
+        </header> 
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1920&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=c0d43804e2c7c93143fe8ff65398c8e9);">
+    <div class="container-fluid">
+      <div class="row  justify-content-center align-items-center d-flex-row text-center h-100">
+        <div class="col-12 col-md-4 col-lg-3   h-200 w-50 ">
+          <div class="card shadow">
+            <div class="card-body mx-auto">
+              <h4 class="card-title mt-3 text-center"><b><i>ADD DETAILS</i></b></h4>
+              <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group input-group">
+                    Type of house:<input name="type_of_house" class="form-control" type="text">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    Location<input name="location_by_file" class="form-control"  type="text">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    Price<input name="price" class="form-control"  type="text">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    Address<input name="address" class="form-control"  type="text">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                   description <textarea rows="2" cols="80" name="description"></textarea><br/>
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    Cover Image:<input name="cover_image" class="form-control" type="file">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    image1: <input name="img1" class="form-control" type="file">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    image2: <input  name="img2" class="form-control" type="file">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    image3: <input name="img3" class="form-control" type="file">
+                </div>
+                <br/>
+                <div class="form-group input-group">
+                    image4: <input name="img4" class="form-control" type="file">
+                </div>
+                <br/>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block"> SUBMIT </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>

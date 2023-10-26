@@ -1,0 +1,53 @@
+@media (min-width: 992px) {
+     #introCarousel {
+      margin-top: -58.59px;
+     }
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active { 
+       height: 50vh; 
+    }
+  } 
+   
+  .navbar .nav-link {
+    color: #c9d2c6 !important;
+  }
+  .footer
+  {
+      height: 50px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+  }
+  #a {
+    height: 80%;
+    width: 100%;
+    opacity: 1;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .aboutus-title {
+     font-size: 40px;
+     text-align: center;
+     text-transform: uppercase;
+     color: #000;
+ }
+ .aboutus-title1 {
+     font-size: 30px;
+     letter-spacing: 0;
+     line-height: 32px;
+     margin: 0 0 40px;
+     padding: 0 0 11px;
+     position: relative;
+     text-transform: uppercase;
+     color: #000;
+ }
+ .aboutus-text {
+     color: #606060;
+     font-size: 20px;
+    
+     margin: 0 0 35px;
+ }

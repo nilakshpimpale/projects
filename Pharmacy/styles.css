@@ -1,0 +1,137 @@
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  header{
+   width: 100%;
+   height: 100vh;
+   background-image: url('images/bg.png');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+  
+  }
+  
+  .mainheader{
+   width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  
+  .mainheader .logo img{
+   width: 250px; height: 70px;
+   padding-left: 60px;
+  }
+  
+  .mainheader nav{
+   width: 450px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  }
+  
+  .mainheader nav a{
+   text-decoration: none;
+   color: black;
+   text-transform: uppercase;
+  }
+  
+  .menubtn{
+   margin-right: 60px;
+  }
+  .mainheader button{
+   padding: 10px 45px;
+   text-align: center;
+   font-size: 14px;
+   color: #fff;
+   border: none;
+   background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+   border-radius: 10px;
+  }
+  
+  footer{
+      width: 100%;
+      /* height: 1vh; */
+      /* background-image: url('../images/bg.png'); */
+      background-repeat: no-repeat;
+      /* background-size: 100% 100%; */
+      
+     }
+    
+     .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+     }
+     .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+  
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+    
+  main{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  
+  main .right-sec{
+   padding-right: 70px;
+  }
+  
+  main .left-sec{
+   padding-left: 100px;
+  }
+  
+  .left-sec h2{
+   font-size: 20px;
+   text-transform: capitalize;
+   font-weight: lighter;
+   color: #242424;
+   margin-top: 100px;
+  }
+  
+  .left-sec h1{
+   font-size: 55px;
+   text-transform: capitalize;
+   font-weight: 700;
+   margin: 15px 0;
+  }
+  
+  .left-sec p{
+   margin-bottom: 20px;
+  }
+  
+  .left-sec button{
+   padding: 15px 45px;
+   text-align: center;
+   font-size: 14px;
+   color: #fff;
+   border: none;
+   background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+   border-radius: 10px;
+  }
+  
+  
